@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "styles.css" rel = "stylesheet">
+    <title>Roshambo Royale</title>
+</head>
+<body>
+    <canvas width = "500px" height = "500px"></canvas>
+
+    <div class = "credits">
+        <p>Heavily inspired by <a href = "https://peterganunis.com/rpsite.html" target = "_blank">Living RPS</a></p>
+        <p>Terribly inefficient and unoptimized code made by Triton</p>
+    </div>
+
+    <div class = "control">
+        <div class = "panel spawn">
+            <p>Spawn</p>
+            <input type="checkbox" name = "factionsSpawn" onclick = "setSpawn(this)" checked>
+            <label>Factions</label><br>
+            <input type="checkbox" name = "randomSpawn" onclick = "setSpawn(this)">
+            <label for="vehicle2">Random</label>
+        </div>
+
+        <div class = "panel strategy">
+            <p>Strategy</p>
+            <input type="checkbox" name = "attackHideStrategy" onclick = "setStrategy(this)" checked>
+            <label>Attack, Hide</label><br>
+            <input type="checkbox" name = "randomStrategy" onclick = "setStrategy(this)">
+            <label for="vehicle2">Random</label>
+        </div>
+
+        <div class = "panel debug">
+            <p>Debug</p>
+            <input type="checkbox">
+            <label>Hitboxes</label><br>
+            <input type="checkbox">
+            <label>Lines</label>
+        </div>
+                
+        <div class = "panel population">
+            <p>Population</p>
+            <input type = "text" oninput = "setPopulation(this)" value = "100">
+        </div>
+
+        <div class = "panel play">
+            <button onclick = "startGame()">Play</button>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+}
+
+.credits {
+    position: absolute;
+}
+
+.panel {
+    position: absolute;
+}
+  
+.panel p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.population input {
+    width: 72px;
+}
+
+.spawn {
+    bottom: 0px;
+    left: 5px;
+}
+
+.strategy {
+    bottom: 0px;
+    left: 100px;
+}
+
+.debug {
+    bottom: 0px;
+    left: 215px;
+}
+
+.population {
+    bottom: 18px;
+    left: 310px;
+}
+
+.play {
+    bottom: 2px; 
+    right: 2px;
+}
